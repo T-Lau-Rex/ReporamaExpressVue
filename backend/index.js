@@ -7,11 +7,14 @@ import morgan from "morgan";
 import path from "path"
 import cors from "cors";
 import router from './routes/routes.js'
- 
+
+
+
+
 // INICIALIZACIONES
- 
+
 const app = express();
- 
+
 // SETTINGS
  
 const port = process.env.PORT || 3000;
