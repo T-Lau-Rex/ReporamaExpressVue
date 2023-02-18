@@ -1,15 +1,9 @@
-
-
-
-/// IMPORTACIONES
+// IMPORTACIONES
 import express from "express";
 import morgan from "morgan";
 import path from "path"
 import cors from "cors";
 import router from './routes/routes.js'
-
-
-
 
 // INICIALIZACIONES
 
