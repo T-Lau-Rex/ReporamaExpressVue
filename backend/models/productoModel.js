@@ -3,7 +3,7 @@ import pool from '../config/database.js'
 
 // mostar todos los comics
 export const getProducts=(result) => {
-    pool.query("SELECT * from comics", (err, results)=> {
+    pool.query("SELECT * from comic", (err, results)=> {
         if(err){
             console.log(err)
             result(err, null)
@@ -16,7 +16,7 @@ export const getProducts=(result) => {
 // mostar un comic
 
 export const getProductById=(id, result) => {
-    pool.query("SELECT * FROM comics WHERE id = ?", [id], (err, results) => {
+    pool.query("SELECT * FROM comic WHERE id = ?", [id], (err, results) => {
         if(err){
             console.log(err)
             result(err, null)
@@ -28,7 +28,7 @@ export const getProductById=(id, result) => {
 // insertar un comic
 
 export const insertProduct=(data, result) => {
-    pool.query("INSER INTO comics SET?"), [data], (err, results) => {
+    pool.query("INSER INTO comic SET?"), [data], (err, results) => {
         if(err){
             console.log(err)
             result(err, null)
@@ -41,7 +41,7 @@ export const insertProduct=(data, result) => {
 // Eliminar un comics
 
 export const deleteProductById = (id, result) => {
-    pool.query("DELETE FROM comics WHERE id = ?", [id], (err, results) => {
+    pool.query("DELETE FROM comic WHERE id = ?", [id], (err, results) => {
         if(err){
             console.log(err)
             result(err, null)
@@ -54,7 +54,7 @@ export const deleteProductById = (id, result) => {
 // Editar un comics
 
 export const updateProductById = (data, result) => {
-    pool.query("UPDATE comics SET ? WHERE id = ?", [data.titulo, data.volumen, data.id_categoria, data.id_editorial, data.estado], (err, results) => {
+    pool.query("UPDATE comic SET ? WHERE id = ?", [data.titulo, data.volumen, data.id_categoria, data.id_editorial, data.estado], (err, results) => {
         if(err){
             console.log(err)
             result(err, null)

@@ -9,19 +9,19 @@ import {
 } from '../controllers/product.js'
 
  // Obtener todos los comics
-router.get('/comics', showProducts)
+router.get('/comic', showProducts)
 
  // Obtener un comic
-router.get('/comics', showProductById)
+router.get('/comic', showProductById)
 
  // Añadir un comic
-router.post('/comics/add', createProduct)
+router.post('/comic/add', createProduct)
 
  // Editar un comic
-router.put('/comics/edit/:id', updateProduct)
+router.put('/comic/edit/:id', updateProduct)
 
  // Borrar un comic
-router.delete('/comics/delete/:id', deleteProduct)
+router.delete('/comic/delete/:id', deleteProduct)
 
 
 export default router
