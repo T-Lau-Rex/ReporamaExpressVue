@@ -1,6 +1,6 @@
 <template>
     <div>
-        <router-link :to="{name: 'Agrega'}" class="boton btn btn-info">Cómic nuevo</router-link>
+        <router-link :to="{name: 'Agregar'}" class="boton btn btn-info">Cómic nuevo</router-link>
         <div class="container">
             <div class="row">
                 <div v-for="item in items" :key="item.id" class="col-md-4 my-3">
@@ -11,11 +11,11 @@
                             <p class="descrip px-2 py-4">{{item.id_editorial}}</p>
                             <p class="my-3">Este comic está {{item.estado}}</p>
                         </div>
+                        <router-link :to="{name: 'Editar', params: {id: item.id}}" class="btn btn-light">Editar</router-link>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 </template>
 

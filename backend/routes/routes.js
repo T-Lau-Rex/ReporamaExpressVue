@@ -12,16 +12,16 @@ import {
 router.get('/comic', showProducts)
 
  // Obtener un comic
-router.get('/comics', showProductById)
+router.get('/comic/:id', showProductById)
 
  // Añadir un comic
 router.post('/comic/agregar', createProduct)
 
  // Editar un comic
-router.put('/comic/edit/:id', updateProduct)
+router.put('/comic/:id', updateProduct)
 
  // Borrar un comic
-router.delete('/comic/delete/:id', deleteProduct)
+router.delete('/comic/borrar/:id', deleteProduct)
 
 
 export default router

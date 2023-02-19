@@ -8,9 +8,25 @@ const routes = [
   },
   {
     path: '/comic/agregar',
-    name: 'Agrega',
+    name: 'Agregar',
     component: () => import('../views/Agregar.vue')
   },
+  {
+    path: '/comic/editar/:id',
+    name: 'Editar',
+    component: () => import('../views/Editar.vue')
+  },
+  {
+    path: '/comic/borrar/:id',
+    name: 'Borrar',
+    component: () => import('../views/Borrar.vue')
+  },
+  {
+    path: '/comic/:id',
+    name: 'Obtener',
+    component: () => import('../views/Obtener.vue')
+  },
+  
   {
     path: '/about',
     name: 'about',

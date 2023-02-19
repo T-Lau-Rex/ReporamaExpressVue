@@ -1,17 +1,17 @@
 <template>
     <div>
-      <AgregarComic />
+      <EditarComic />
     </div>
 </template>
   
   <script>
   // @ is an alias to /src
-  import AgregarComic from '@/components/AgregarComic.vue'
+  import EditarComic from '@/components/EditarComic.vue'
   
   export default {
-    name: 'Agregar',
+    name: 'Editar',
     components: {
-      AgregarComic
+      EditarComic
     }
   }
   </script>
