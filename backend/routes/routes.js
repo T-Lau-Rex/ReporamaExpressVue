@@ -12,10 +12,10 @@ import {
 router.get('/comic', showProducts)
 
  // Obtener un comic
-router.get('/comic', showProductById)
+router.get('/comics', showProductById)
 
  // Añadir un comic
-router.post('/comic/add', createProduct)
+router.post('/comic/agregar', createProduct)
 
  // Editar un comic
 router.put('/comic/edit/:id', updateProduct)

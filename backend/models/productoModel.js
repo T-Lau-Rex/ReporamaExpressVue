@@ -28,14 +28,14 @@ export const getProductById=(id, result) => {
 // insertar un comic
 
 export const insertProduct=(data, result) => {
-    pool.query("INSER INTO comic SET?"), [data], (err, results) => {
+    pool.query("INSET INTO comic SET ?", [data], (err, results) => {
         if(err){
             console.log(err)
             result(err, null)
         } else {
             result(null, results[0])
         }
-    }
+    })
 }
 
 // Eliminar un comics

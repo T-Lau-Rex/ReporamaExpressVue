@@ -2,9 +2,14 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
   {
-    path: '/',
+    path: '/comic',
     name: 'Index',
     component: () => import('../views/Index.vue'),
+  },
+  {
+    path: '/comic/agregar',
+    name: 'Agrega',
+    component: () => import('../views/Agregar.vue')
   },
   {
     path: '/about',
